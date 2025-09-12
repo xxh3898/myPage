@@ -1,10 +1,116 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: o;
+    padding: 0;
 }
 
+ul,
 ol,
-li.ul {
+li {
     list-style: none;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.header-top h1 {
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+}
+
+.flag {
+    width: 40px;
+    height: auto;
+}
+
+nav {
+    background-color: #ffcc00;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.menu li {
+    position: relative;
+    margin: 0 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 5px;
+    display: block;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    background-color: #ffd633;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffe680;
+    padding: 0;
+    margin: 0;
+    min-width: 140px;
+    border: 1px solid #ddd;
+}
+
+.submenu li a {
+    padding: 10px;
+}
+
+.submenu li a:hover {
+    background-color: #ffd633;
+}
+
+.search-bar {
+    margin-left: auto;
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="search"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    margin-left: 5px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #555;
 }

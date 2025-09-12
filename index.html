@@ -21,17 +21,46 @@
         맨 밑에는 대사관 연락처 기입
 -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>홈페이지</title>
+    <title>Welcome to Thailand</title>
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 
 <body>
+    <header>
+        <div class="header-top">
+            <img src="./images/korea_flag.png" alt="korea_flag">
+            <h1>Welcome to Thailand / เวลคัมทูไทยแลนด์</h1>
+            <img src="./images/thailand_flag.png" alt="thailand_flag">
+        </div>
 
+        <nav>
+            <ul class="menu">
+                <li class="dropdown">
+                    <a href="#">도시별</a>
+                    <ul class="submenu">
+                        <li><a href="./City/bangkok.html">방콕</a></li>
+                        <li><a href="./City/chiangmai.html">치앙마이</a></li>
+                        <li><a href="./City/phuket.html">푸켓</a></li>
+                        <li><a href="./City/ayutthaya.html">아유타야</a></li>
+                        <li><a href="./City/pattaya.html">파타야</a></li>
+                    </ul>
+                </li>
+                <li><a href="./culture.html">문화</a></li>
+                <li><a href="./food.html">음식</a></li>
+                <li class="search-bar">
+                    <form>
+                        <input type="search" placeholder="도시나 음식을 입력하세요" required>
+                        <button type="submit">검색</button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
 </body>
 
 </html>
