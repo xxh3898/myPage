@@ -52,6 +52,7 @@ Temporary Items
 # Ignore all local history of files
 .history
 .ionide
+.vscode
 
 ### Windows ###
 # Windows thumbnail cache files
@@ -80,3 +81,4 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,macos,visualstudiocode
+.vscode/settings.json
