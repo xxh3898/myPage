@@ -10,6 +10,12 @@ li {
     list-style: none;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
 header {
     background-color: #fff;
     border-bottom: 2px solid #ddd;
@@ -364,6 +370,11 @@ article {
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.food-card img:hover {
+    transform: scale(1.05);
 }
 
 .food-card h4 {
