@@ -1,0 +1,185 @@
+<!-- 
+    동일하게 헤더/네비게이션 그대로 사용하고
+
+    음식을 카테고리별(식사, 간식, 과일)로 나눠 사진과 함께 음식의 유래와 설명 기입
+    카테고리를 좌측에 fixed로 고정시킨 후 누르면 바로 스크롤을 움직여 이동할 수 있게 구현
+-->
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>태국의 음식</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <img src="./images/korea_flag.png" alt="korea_flag">
+            <h1>Welcome to Thailand / เวลคัมทูไทยแลนด์</h1>
+            <img src="./images/thailand_flag.png" alt="thailand_flag">
+        </div>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="./index.html">홈</a></li>
+                <li><a href="./culture.html">문화</a></li>
+                <li><a href="./food.html">음식</a></li>
+                <li class="search-bar">
+                    <form>
+                        <input type="search" placeholder="문화나 도시를 입력하세요" required>
+                        <button type="submit">검색</button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="food-page">
+            <!-- 좌측 고정 카테고리 네비 -->
+            <aside class="food-nav">
+                <ul>
+                    <li><a href="#meal">식사</a></li>
+                    <li><a href="#snack">간식</a></li>
+                    <li><a href="#fruit">과일</a></li>
+                </ul>
+            </aside>
+
+            <!-- 메인 콘텐츠 -->
+            <section class="food-content">
+                <h2>태국의 음식</h2>
+                <p class="intro-text">
+                    태국의 음식은 다양한 향신료와 허브, 독특한 조리법으로 세계적으로 사랑받고 있습니다. <br>
+                    카테고리별로 대표적인 음식과 그 유래를 소개합니다.
+                </p>
+
+                <!-- 식사 -->
+                <article id="meal">
+                    <div class="food-title">
+                        <img src="./images/pad_thai.jpg" alt="팟타이">
+                        <div>
+                            <h3>식사</h3>
+                            <p>
+                                태국의 대표적인 식사 메뉴로는 팟타이, 푸팟퐁커리, 똠얌꿍 등이 있습니다. <br>
+                                밥과 면 요리 모두 다양하며, 향신료와 허브의 조화가 특징입니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="food-list food-grid">
+
+                        <article class="food-card">
+                            <img src="./images/pad_thai.jpg" alt="팟타이">
+                            <h4>팟타이 (Pad Thai)</h4>
+                            <p>태국을 대표하는 볶음쌀국수. 새우, 숙주, 달걀, 땅콩 등을 넣어 볶아낸 메뉴.</p>
+                        </article>
+
+                        <article class="food-card">
+                            <img src="./images/pu_pad_pong_curry.jpg" alt="푸팟퐁커리">
+                            <h4>푸팟퐁커리 (Pu Pad Pong Curry)</h4>
+                            <p>게와 달걀, 커리를 넣어 볶아낸 해산물 요리로 태국식 카레의 대표 메뉴.</p>
+                        </article>
+
+                        <article class="food-card">
+                            <img src="./images/suki.jpg" alt="쑤끼">
+                            <h4>쑤끼 (Thai Suki)</h4>
+                            <p>태국식 샤브샤브. 고기와 해산물을 채소와 함께 끓여 먹는 요리.</p>
+                        </article>
+
+                        <article class="food-card">
+                            <img src="./images/tom_yum.jpg" alt="똠얌꿍">
+                            <h4>똠얌꿍 (Tom Yum Goong)</h4>
+                            <p>새우와 레몬그라스, 고추, 라임을 넣어 끓인 매콤새콤한 태국 대표 수프.</p>
+                        </article>
+
+                        <article class="food-card">
+                            <img src="./images/som_tam.jpg" alt="쏨땀">
+                            <h4>쏨땀 (Som Tam)</h4>
+                            <p>잘게 채 썬 파파야에 고추, 피쉬소스, 땅콩 등을 넣어 만든 매콤한 샐러드.</p>
+                        </article>
+
+                        <article class="food-card">
+                            <img src="./images/khao_kha_mu.jpg" alt="카오 카무">
+                            <h4>카오 카무 (Khao Kha Mu)</h4>
+                            <p>간장 소스에 졸인 돼지족발을 밥 위에 올려 먹는 태국식 족발 덮밥.</p>
+                        </article>
+
+                    </div>
+                </article>
+
+                <!-- 간식 -->
+                <article id="snack">
+                    <div class="food-title">
+                        <img src="./images/mango_sticky_rice.jpg" alt="망고 스티키 라이스">
+                        <div>
+                            <h3>간식</h3>
+                            <p>
+                                태국의 길거리 음식 문화는 세계적으로 유명합니다. <br>
+                                달콤한 디저트부터 바삭한 간식까지 다양하게 즐길 수 있습니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="food-list food-grid">
+
+                        <article class="food-card">
+                            <img src="./images/mango_sticky_rice.jpg" alt="망고 스티키 라이스">
+                            <h4>망고 스티키 라이스 (Mango Sticky Rice)</h4>
+                            <p>잘 익은 망고와 코코넛 밀크를 곁들인 달콤한 찹쌀밥 디저트.</p>
+                        </article>
+
+                        <article class="food-card">
+                            <img src="./images/khanom_bueng.jpg" alt="크리스피 팬케이크">
+                            <h4>크리스피 팬케이크 (Khanom Bueng)</h4>
+                            <p>얇은 팬케이크에 크림과 코코넛을 넣어 바삭하게 즐기는 길거리 간식.</p>
+                        </article>
+
+                        <article class="food-card">
+                            <img src="./images/roti.jpg" alt="로띠">
+                            <h4>로띠 (Roti)</h4>
+                            <p>인도식 전병에서 유래된 태국식 간식. 연유나 초콜릿을 얹어 달콤하게 즐김.</p>
+                        </article>
+
+                    </div>
+                </article>
+
+                <!-- 과일 -->
+                <article id="fruit">
+                    <div class="food-title">
+                        <img src="./images/durian.jpg" alt="두리안">
+                        <div>
+                            <h3>과일</h3>
+                            <p>
+                                태국은 열대 기후 덕분에 다양한 열대 과일이 풍부합니다. <br>
+                                독특한 향과 맛을 가진 과일이 많아 여행자들에게도 큰 인기를 끌고 있습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="food-list">
+                        <div class="food-card">
+                            <img src="./images/durian.jpg" alt="두리안">
+                            <h4>두리안 (Durian)</h4>
+                            <p>‘과일의 왕’이라 불리며 강한 향과 부드러운 식감이 특징.</p>
+                        </div>
+                        <div class="food-card">
+                            <img src="./images/mangosteen.jpg" alt="망고스틴">
+                            <h4>망고스틴 (Mangosteen)</h4>
+                            <p>‘과일의 여왕’으로 불리며 새콤달콤한 맛을 가진 과일.</p>
+                        </div>
+                        <div class="food-card">
+                            <img src="./images/papaya.jpg" alt="파파야">
+                            <h4>파파야 (Papaya)</h4>
+                            <p>달콤하고 부드러운 과육을 가진 과일로, 샐러드(솜탐)에도 자주 사용됨.</p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2025 Thailand Travel Guide. All rights reserved.</p>
+        </footer>
+</body>
+
+</html>
