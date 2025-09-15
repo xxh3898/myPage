@@ -306,7 +306,7 @@ article {
 
 /* 메인 콘텐츠 */
 .food-content {
-    margin-left: 180px;
+    margin: auto;
     max-width: 900px;
 }
 
