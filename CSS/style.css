@@ -327,6 +327,22 @@ article {
     margin-bottom: 40px;
 }
 
+.food-title {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.food-title img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 /* 음식 카드 리스트 */
 .food-list {
     display: grid;
