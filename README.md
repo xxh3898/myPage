@@ -27,9 +27,29 @@
 * **`HTML5`**: 웹페이지의 구조와 콘텐츠를 담당합니다.
 * **`CSS3`**: `style.css` 파일을 통해 웹사이트의 전체적인 디자인과 레이아웃(카드 정렬, 고정 메뉴 등)을 구현합니다.
 
-## 📂 프로젝트 구조
-
-. ├── index.html # 🏠 메인 페이지 ├── culture.html # 🎎 문화 소개 페이지 ├── food.html # 🍲 음식 소개 페이지 ├── .gitignore # 🙈 Git 무시 파일 │ ├── CSS/ │ └── style.css # 🎨 공통 스타일시트 │ ├── City/ # 🏙️ (도시별 상세 페이지) │ ├── bangkok.html │ ├── chiangmai.html │ ├── phuket.html │ ├── ayutthaya.html │ └── pattaya.html │ └── images/ # 🖼️ (프로젝트 사용 이미지) # (이미지 파일은 용량 문제로 제외됨) ├── bangkok.png ├── korea_flag.png ├── thailand_flag.png ├── pad_thai.png └── ...
+## 📂 프로젝트 구조## 📂 프로젝트 구조
+.
+├── index.html          # 🏠 메인 페이지
+├── culture.html        # 🎎 문화 소개 페이지
+├── food.html           # 🍲 음식 소개 페이지
+├── .gitignore          # 🙈 Git 무시 파일
+│
+├── CSS/
+│   └── style.css       # 🎨 공통 스타일시트
+│
+├── City/               # 🏙️ (도시별 상세 페이지)
+│   ├── bangkok.html
+│   ├── chiangmai.html
+│   ├── phuket.html
+│   ├── ayutthaya.html
+│   └── pattaya.html
+│
+└── images/             # 🖼️ (프로젝트 사용 이미지)
+    ├── bangkok.png
+    ├── korea_flag.png
+    ├── thailand_flag.png
+    ├── pad_thai.png
+    └── ...
 
 
 ## 💡 실행 방법
